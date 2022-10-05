@@ -36,6 +36,9 @@ We have 1 fact table as `i94immigration_fact` and 3 dimension table as `country_
 These dimension tables can link to fact table through `i94res`, `arrdate` and `i94addr` fields in `i94immigration_fact` table.
 With this database, data analysit can deep dive to figure out patterns for immigration data, such as there is any commonality between residence country and US country state - are they prefer some specific US states over other US state.
 
+
+
+
 ![data_model](data_model.png)
 
 #### Step 5: Complete Project Write Up
