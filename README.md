@@ -38,7 +38,7 @@ With this database, data analysit can deep dive to figure out patterns for immig
 
 ![data_model](data_model.png)
 
-#### Step 5: Complete Project Write Up
+### Step 5: Complete Project Write Up
 * Clearly state the rationale for the choice of tools and technologies for the project.
     - This project uses `Apache Spark` as it is the right choice to handle big datasets.
 * Propose how often the data should be updated and why.
