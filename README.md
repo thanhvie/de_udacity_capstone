@@ -29,6 +29,15 @@ You can access the immigration data in a folder with the following path: `../../
 You can access the temperature data in a folder with the following path: `../../data2/`. There's just one file in that folder, called `GlobalLandTemperaturesByCity.csv`
 - **U.S. City Demographic Data**: This data comes from OpenSoft. You can read more about it [here](https://public.opendatasoft.com/explore/dataset/us-cities-demographics/export/).
 
+### Step 3: Define the Data Model
+#### 3.1 Conceptual Data Model
+The conceptual data model is as image below.
+We have 1 fact table as `i94immigration_fact` and 3 dimension table as `country_temperature_dim`, `calendar_dim` and `us_demographics_dim`.
+These dimension tables can link to fact table through `i94res`, `arrdate` and `i94addr` fields in `i94immigration_fact` table.
+With this database, data analysit can deep dive to figure out patterns for immigration data, such as there is any commonality between residence country and US country state - are they prefer some specific US states over other US state.
+
+![data_model](data_model.png)
+
 #### Step 5: Complete Project Write Up
 * Clearly state the rationale for the choice of tools and technologies for the project.
     - This project uses `Apache Spark` as it is the right choice to handle big datasets.
